@@ -1,0 +1,28 @@
+Requirements:
+============
+- Java JDK (tested with version 8)
+- Apache Maven (tested with version 3.8.2)
+
+Execution:
+=========
+To run application, please execute in command line:
+mvnw spring-boot:run
+
+To test application, please execute in command line:
+mvn test
+
+Swagger UI:
+==========
+http://localhost:8080/swagger-ui.html
+
+Patter Design:
+-------------
+- I used DAO pattern, where TrainerService will be used for Business Logic and TrainerRepository for Data Access.
+ 
+Improvements to be consider in the future:
+-----------------------------------------
+- Complete TrainerServiceImpl.getTrainerById_success() Unit Test and adding new ones for TrainerRespository class.
+- Replace memory DB H2 for a persistent one.
+- Improve Trainer Model with more information and validations.
+- Create a config file different from lower and production environments.
+- Add JSON Based Token validation.  
